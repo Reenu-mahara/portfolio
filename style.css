@@ -1,0 +1,561 @@
+body{
+    margin: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+}
+.text-center{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    height:auto;
+    flex-direction: column;
+    width:100%;
+    font-family: 'Baloo Tammudu 2', cursive;;
+    
+}
+section:nth-child(2n){
+    background-color:#f2f2f2 ;
+}
+
+section:nth-child(2n+1){
+    background-color:white ;
+}
+
+/*Navigation Section */
+
+.header-body{
+    background-image: url("https://flevix.com/wp-content/uploads/2020/01/Fade-In-Background.svg");
+    height:60vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+
+}
+
+
+.horizontal-list{
+    padding-left: 0px;
+    text-align: center;   
+   
+}
+.horizontal-list li {
+    list-style: none;
+    display: inline-block;
+    margin-top:35px;
+    margin-right: 10px;
+    
+      
+}
+
+.horizontal-list a{
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+    width:25px;
+    height:20px;
+    font-weight: bolder;
+    padding:5px;
+
+}
+
+nav ul li a:hover{
+    border:1px #6c42f5 solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 4px #6c42f5;
+}
+#name{
+    margin-top:5%;
+    color:white;
+    letter-spacing: 2px;
+    font-size:40px;
+}
+
+/*Styling Icons*/
+ .fa-facebook:hover{
+    color:#4267B2;
+
+}
+
+.fa-instagram:hover{
+    color:#fb3958;
+    
+}
+.fa-linkedin:hover{
+    color: #0e76a8;
+    
+}
+.fa-github:hover{
+    color:black;
+    
+}
+
+/*About Section*/
+
+#about{
+    height: auto;
+    width:100%;
+    align-items: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.my-image{
+    height: 12rem;
+    width:12rem;
+    margin: auto;
+    margin-top: -14vh;
+}
+.my-image img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+#about p{
+    width: 500px;
+    text-align: justify;
+    
+   
+}
+
+/*Skills Section*/
+
+#skills{
+    align-items:center;
+    margin-top:50px;
+    font-size:25px;
+    
+    
+}
+
+
+
+.skills-display{
+    margin-top:2%;
+    margin-bottom: 3%;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+}
+
+.skills-progress{
+    width:7.5rem;
+    height: 1.4rem;
+    margin: 10px;
+    border-radius: 0.8rem;
+    background-color:#d0e1e1;
+}
+
+.skills-name span{
+    color:white;
+    font-size: 1rem;
+    margin-left: 10px;
+    letter-spacing: 0px;
+
+}
+
+.skills-progress>div{
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+/*Percentage indicator*/   
+
+.c-plus-plus{
+    width:85%;
+    height:inherit;
+    background-color:#00ccff;
+}
+
+.html{
+    width:90%;
+    height: inherit;
+    background-color: #ff6600;
+    
+}
+
+.css{
+    width:85%;
+    height: inherit;
+    background-color:#00cc00;
+}
+
+.react{
+    width:40%;
+    height: inherit;
+    background-color:#1a75ff;
+}
+
+.js{
+    width:65%;
+    height: inherit;
+    background-color:#9900cc;
+}
+
+.c{
+    width:70%;
+    height: inherit;
+    background-color: saddlebrown;
+}
+
+
+/*Education Section*/
+
+#education{
+    align-items: center;
+    font-size:25px;
+    
+}
+
+.timeline{
+    position: relative;
+    width:60%;
+    
+}
+
+.timeline-div{
+    position: relative;
+    margin:5px;
+    width:42%;
+    left:5%;
+    min-height:150px;
+    
+}
+
+.timeline-div:nth-child(2n){
+    left:53%;
+    
+}
+
+#even-div{
+    text-align: right;
+    
+}
+
+#even-div , #odd-div{
+    text-transform: uppercase;
+    color:orangered;
+    font-size:18px;
+    font-weight: 800;
+}
+
+.timeline-div span{
+    color:gray;
+    font-size:15px ;
+    
+}
+
+.timeline-divider{
+    position: absolute;
+    height:70%;
+    width:0;
+    border:2px dashed orange;
+    top:8%;
+    left:50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top:25%;
+    transform:rotate(90deg);
+    
+}
+
+.fa-plane{
+    font-size:30px; 
+}
+
+.timeline-div:nth-child(2n):after{
+    content:'';
+    z-index:2;
+    border-radius: 50%;
+    width:0.5rem;
+    top:8%;
+    left:-9%;
+    height:0.5rem;
+    position: absolute;
+    background-color: red;
+}
+
+.timeline-div:nth-child(2n+1):after{
+    content:'';
+    border-radius: 50%;
+    width:0.5rem;
+    z-index:2;
+    top:18%;
+    right:-8%;
+    height:0.5rem;
+    position: absolute;
+    background-color: red;
+}
+
+/*-----------------Projects Section-----------------------*/
+
+#projects{
+   align-items: center;
+   
+}
+
+.project-heading{
+    font-size:35px;
+    font-family: 'Raleway',sans-serif;
+    
+}
+
+
+.cards{
+    width:100%;
+    height:auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card_img{
+ width: 100%;
+ height:235px;
+ border-top-left-radius: 12px;
+ border-top-right-radius: 12px;
+ 
+ 
+}
+
+.card{
+ margin:3%;
+ transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+ background-color: #fff;
+ border-radius: 12px;
+ width:20%;
+ box-shadow: 0px 13px 10px -7px rgba(0,0,0,0.1);
+ 
+}
+
+
+.card_title{
+ margin-top: 5px;
+ margin-left:15px;
+ margin-bottom: 10px;
+ text-transform: capitalize;
+ background-color: #fff;
+ font-family: "Raleway", sans-serif;
+}
+
+.card:hover{
+ box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+ transform: scale(1.05,1.05);
+ 
+}
+
+.card_info{
+ background-color: #fff;
+ text-align:235px;
+ border-bottom-left-radius: 12px;
+ border-bottom-right-radius: 12px;
+ padding:16px 24px 24px 24px;
+ 
+}
+
+.card_info  span{
+    color:gray;
+    
+}
+
+
+/*--------------------------------------------------------*/
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+    
+.container .card{
+    max-width:300px;
+    height: auto;
+    position: relative;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+
+.container .card:hover{
+    height: 420px;
+}
+
+
+.container .card .imgBx{
+    position: relative;
+    width:260px;
+    height: 260px;
+    top:-60px;
+    left:20px;
+    
+
+}
+
+.container .card .imgBx  img{
+    max-width:100%;
+    width:235px;
+    height: 200px;
+    border-radius: 4px;
+    margin-bottom:30px ;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top:-140px;
+    padding: 10px 10px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease-in-out ;
+
+
+} 
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    padding: 10px 10px;
+    margin-top: -130px;
+    margin-left: 32px;
+    transition-delay: 0.2s;
+   
+}
+/*Contact section*/
+
+#contact{
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+    background-image: url(https://flevix.com/wp-content/uploads/2020/01/Fade-In-Background.svg);
+
+    
+}
+
+#contact h1{
+    font-size:35px;
+}
+
+input{
+    width:100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-bottom: 5px;
+    border-bottom:2px solid #6c42f5;
+    cursor:text;
+    color:white;
+    font-size: 15px;
+    caret-color: #6c42f5;
+}
+
+.contact-details{
+    display: flex;
+    width:80%;
+    
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px ;
+    background-color:rgba(116, 50, 182, 0.2)
+
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 80%;
+    
+}
+
+.btn{
+    margin-left:50px;
+    width:100%;
+    height:30px;
+    
+    background-color: rgba(0,0,0,0.3);
+    border:none;
+    color:white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+textarea{
+    width:100%;
+    border:1px solid #ccc;
+    outline:none;
+    color:white;
+    padding:10px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+button:hover{
+    
+    border:2px solid #6c42f5;
+    box-shadow: 0px 0px 3px 3px #6c42f5;
+}
+
+
+.tabular-info{
+    color:white;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:600px){
+  
+    .timeline-divider{
+        left:5%;
+    }
+    .timeline-box{
+        left:12% !important;
+        width:80%;
+    }
+    .timeline-box::after{
+        left:-12% !important;
+    }
+
+    .timeline-box:nth-child(2n+1)::after{
+        left:-12%;
+    }
+
+    html{
+        font-size:15px;
+    }
+
+    #horizontal-list a{
+        font-size: 15px;
+    }
+
+   /*.timeline-box:nth-child(2n){
+        left:12%;
+    }*/
+}
